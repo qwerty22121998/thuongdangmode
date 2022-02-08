@@ -8,9 +8,6 @@
     "32": "assets/32.png",
     "128": "assets/128.png"
   },
-  "permissions": [
-    "activeTab"
-  ],
   "host_permissions": [
     "https://www.facebook.com/groups/sau23h"
   ],

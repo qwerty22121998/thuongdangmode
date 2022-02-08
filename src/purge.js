@@ -1,6 +1,3 @@
-const CMT_DEEP = 19
-
-
 const purgeComment = () => {
   const commentSections = document.querySelectorAll(".cwj9ozl2.tvmbv18p")
   commentSections.forEach(commentSection => {
