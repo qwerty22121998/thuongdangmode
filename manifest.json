@@ -1,11 +1,23 @@
 {
-  "name": "ThuongDangMode",
-  "description": "Dành cho thượng đẳng, mấy thằng join date 2022 ngậm mồm vào",
+  "name": "ThuongDang Mode",
+  "description": "Dành cho thượng đẳng, mấy thằng join date 2022 ra đường cúi cúi cái đầu xuống ",
   "version": "1.0",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "icons": {
     "16": "assets/16.png",
     "32": "assets/32.png",
     "128": "assets/128.png"
-  }
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.facebook.com/groups/sau23h"
+  ],
+  "content_scripts": [{
+    "matches": ["https://www.facebook.com/groups/sau23h/*"],
+    "js": ["src/purge.js"],
+    "css": ["src/css/style.css"],
+    "rune_at": "document_end"
+  }]
 }
